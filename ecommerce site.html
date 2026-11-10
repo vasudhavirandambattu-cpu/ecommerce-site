@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Girl</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+    :root{
+        --pink:#e84393;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        
+    }
+   header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#fff;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.logo h1{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#e91e63;
+}
+
+.navbar{
+    display:flex;
+    gap:35px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#555;
+    font-size:22px;
+}
+
+.icons{
+    display:flex;
+    gap:20px;
+    font-size:25px;
+}
+
+.icons i{
+    cursor:pointer;
+}
+        .navbar a:hover{
+            color: #c2185b;
+        }
+    home{
+    position: relative;
+}
+
+.home img{
+    width:100%;
+    height:90vh;
+    object-fit:cover;
+}
+
+.content{
+    position:absolute;
+    top:50%;
+    right:8%;
+    transform:translateY(-50%);
+    width:35%;
+}
+
+.content h3{
+    font-size:30px;
+    color:#e91e63;
+    font-family:'Georgia', serif;
+}
+
+.content h1{
+    font-size:55px;
+    color:#222;
+    font-family:'Poppins', sans-serif;
+    margin:15px 0;
+}
+
+.content p{
+    font-size:18px;
+    color:#555;
+    line-height:30px;
+    margin-bottom:25px;
+    font-family:'Arial', sans-serif;
+}
+.btn,
+.btn1{
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.btn{
+    background: #e91e63;
+    color: white;
+}
+.btn:hover{
+    background:#c2185b ;
+}
+.btn1{
+    border: 2px solid #e91e63;
+    color: #e91e63;
+}
+.btn1:hover{
+    background: #e91e63;
+    color: white;
+}
+.products{
+    padding:50px 8%;
+    background:#fff;
+}
+
+.heading{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.heading span{
+    color:#e91e63;
+}
+
+.box-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:280px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+    padding:20px;
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+}
+
+.box img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.box h3{
+    margin:15px 0;
+}
+
+.stars{
+    color:gold;
+    font-size:22px;
+}
+
+.price{
+    font-size:28px;
+    color:#c63c6a;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 25px;
+    background:#d4245f;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+     </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>Flower<span>.</span></h1>
+    </div>
+   
+    
+    <nav class="navbar">
+        <a href="#">home</a>
+        <a href="#About">about</a>
+        <a href="#produts">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+        <i class="fa-solid fa-heart"></i>
+       <i class="fa-solid fa-cart-arrow-down"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+</header>
+<section class="banner">
+    <section class="home">
+       
+            <img src="../bannerimage.png.jpeg" alt="bannerimage">
+            
+            <div class="content">
+            <h3>Garden Dreams</h3>
+            <h1>Natural & <br> Beautiful Flowers</h1>
+            <p>
+                Made on Earth, designed with you in mind. 
+                Discover fresh flowers that brighten every moment.
+               Order beautiful bouquets for your loved ones.
+            </p>
+            <a href="#" class="btn">Shop Now</a>
+            <a href="#" class="btn">More</a>
+        </div>
+    </section>
+</section>
+    <section class="products">
+
+    <h1 class="heading">Our <span>Products</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="../flowerimage1.png.jpeg" alt="flowerimage1">
+            <h3>Sweet Romance Bouquet</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="price">₹999</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="../flowerimage2.png.jpeg" alt="flowerimage2">
+            <h3>Elegant peony Bouquet</h3>
+
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <div class="price">₹1299</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="../flowerimage3.png.jpeg" alt="flowerimage3">
+            <h3>Pink Lily Delight</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="price">₹2500</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+         <div class="box">
+         <img src="../flowerimage4.png.jpeg" alt="flowerimage4">
+            <h3>Blush Rose Bouquet</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="price">₹1499</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+         <div class="box">
+         <img src="../flowerimage5.png.jpeg" alt="flowerimage5">
+            <h3>Royal Bloom Bouquet</h3>
+
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <div class="price">₹3000</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+         <div class="box">
+         <img src="../flowerimage6.png.jpeg" alt="flowerimage6">
+            <h3>Spring Blossom Bouquet</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="price">₹1800</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+         <div class="box">
+         <img src="../flowerimage7.png.jpeg" alt="flowerimage7">
+            <h3>Golden Garden Bouquet</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="price">₹1299</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+         <div class="box">
+         <img src="../flowerimage8.png.jpeg" alt="flowerimage8">
+            <h3>Peach Rose Bouquet</h3>
+
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <div class="price">₹1000</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+         <div class="box">
+         <img src="../flowerimage9.png.jpeg" alt="flowerimage9">
+            <h3>Pastel Tulip Bouquet</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="price">₹3000</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+         <img src="../flowerimage10.png.jpeg" alt="flowerimage10">
+            <h3>Sunshine Bloom Bouquet</h3>
+
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <div class="price">₹1600</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+         <img src="../flowerimage11.png.jpeg" alt="flowerimage11">
+            <h3>Elegant Flower Basket</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="price">₹2300</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="box">
+         <img src="../flowerimage12.png.jpeg" alt="flowerimage12">
+            <h3>Pearl Rose Bouquet</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <div class="price">₹2000</div>
+
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+</body>
+</html>
